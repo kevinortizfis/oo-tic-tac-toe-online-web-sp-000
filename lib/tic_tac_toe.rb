@@ -29,7 +29,7 @@ class TicTacToe
 
   def valid_move?(index)
     #return true if BOTH position taken are false and the move is possible (1-9)
-    index.to_i.between?(1,8)
+true
   end
 
   def turn_count
