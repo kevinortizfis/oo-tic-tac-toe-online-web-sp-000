@@ -27,9 +27,9 @@ class TicTacToe
     @board[index] == "X" || @board[index] == "O"
   end
 
-  def valid_move?(input)
+  def valid_move?(index)
     #return true if BOTH position taken are false and the move is possible (1-9)
-    input_to_index(input).between?(0,9) && !position_taken?(input_to_index(input))
+    index.to_i.between?(0,8) && !position_taken?(index.to_i)
   end
 
   def turn_count
