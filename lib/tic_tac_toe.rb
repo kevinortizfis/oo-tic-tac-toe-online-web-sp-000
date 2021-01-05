@@ -60,7 +60,7 @@ class TicTacToe
     end
 
     def full?
-     turn_count >= 9
+     turn_count == 9
     end
 
     def draw?
