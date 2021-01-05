@@ -83,7 +83,6 @@ class TicTacToe
       until over?
         turn
         draw?
-      end
       if draw?
         puts "Cat's Game!"
       if won?
