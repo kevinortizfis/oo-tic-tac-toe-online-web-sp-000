@@ -60,7 +60,7 @@ class TicTacToe
     end
 
     def full?
-     turn_count == 9
+     turn_count >= 9
     end
 
     def draw?
@@ -82,13 +82,11 @@ class TicTacToe
     def play
       until over?
         turn
-        draw?
+      end
       if draw?
         puts "Cat's Game!"
-      if won?
+      elsif won?
         puts "Congratulations #{winner}!"
       end
     end
-  end
-end
 end
