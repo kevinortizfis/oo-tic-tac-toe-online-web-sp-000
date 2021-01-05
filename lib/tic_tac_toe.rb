@@ -31,6 +31,7 @@ class TicTacToe
     #return true if BOTH position taken are false and the move is possible (1-9)
     if index.to_i.between?(1,9) && !position_taken?(index.to_i)
       true
+    else false
     end
   end
 
